@@ -12,8 +12,10 @@
     <p>Enter the second number </p><br>
     <input type="number" id="b";> <br>
     <button onclick="add()">ADD</button>
-    <p><h1>The sum is::<input id="ans"></h1></p>
-    <p>Here I am using git branch named feature1</p>
+    <button onclick="multiply()">MULTIPLY</button>
+        <button onclick="subtract()">SUBTRACT</button>
+    <button onclick="divide()">DIVIDE</button>
+    <p><h1>The answeris::<input id="ans"></h1></p>
 </body>
 <script>
     function add()
@@ -22,6 +24,30 @@
        x=parseInt(document.getElementById("a").value);
        y=parseInt(document.getElementById("b").value);
        s=x+y;
+       document.getElementById("ans").value=s;
+    }
+    function subtract()
+    {
+        let x,y,s;
+       x=parseInt(document.getElementById("a").value);
+       y=parseInt(document.getElementById("b").value);
+       s=x-y;
+       document.getElementById("ans").value=s;
+    }
+    function multiply()
+    {
+        let x,y,s;
+       x=parseInt(document.getElementById("a").value);
+       y=parseInt(document.getElementById("b").value);
+       s=x*y;
+       document.getElementById("ans").value=s;
+    }
+    function divide()
+    {
+        let x,y,s;
+       x=parseInt(document.getElementById("a").value);
+       y=parseInt(document.getElementById("b").value);
+       s=x/y;
        document.getElementById("ans").value=s;
     }
 </script>
